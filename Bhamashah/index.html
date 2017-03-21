@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico" rel="stylesheet">
+    <title>Scrolling Nav - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="styling.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container" >
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><img width=100px height=100px src="file:///D:/Work/bhamashahLogo.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#E-Learning">E-Learning</a>
+                    </li>
+                   
+                    <li>
+                        <a class="page-scroll" href="#SHG">SHG</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#PCR">Contact-PCR</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="https://index.html">Write To CM</a>
+                    </li>
+         
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container " >
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <div class="panel panel-success">
+  <div class="panel-heading"><h1>New Account</h1></div>
+  <div class="panel-body">
+
+                    <form action = "Create New Account.html" method ="post" onsubmit="return validate();" >
+                    	<h3>Enter the Bhamashah ID</h3>
+                    	<input type="text" name="Bhamashah ID" id = "text1">
+                    	<h3>Enter the Password</h3>
+                    	<input type="Password" name="Password" id = "text2">
+                    	<h3>Re-Enter the Password</h3>
+                    	<input type="Password" name="Password" id = "text3" >
+                    	<br><br>
+                    	<button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset"  class="btn btn-primary">Reset </button>
+                    </form>
+                    </div>
+                    </div>
+					</div>
+					<div class="col-lg-6">
+
+                    <div class="panel panel-success">
+  <div class="panel-heading"><h1>Already have an account?</h1></div>
+  <div class="panel-body">
+
+                    <form action = "index.html" method ="post" onsubmit="return validate();" >
+                    	<h3>Enter the Bhamashah ID</h3>
+                    	<input type="text" name="Bhamashah ID" id = "text1">
+                    	<h3>Enter the Password</h3>
+                    	<input type="Password" name="Password" id = "text2">
+                    	<br><br>
+                    	<button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset"  class="btn btn-primary">Reset </button>
+                    </form>
+                    </div>
+                    </div>
+</div>               
+                    <script type="text/javascript">
+function validate()
+{
+    console.log(".alskjdnlasnd/");
+    if(   document.getElementById("text1").value == "11607457" 
+    && (document.getElementById("text2").value == "admin123")
+    && (document.getElementById("text3").value == document.getElementById("text2").value ))
+    {
+        alert( "validation succeeded" );
+        return true;
+    }
+    else
+    {alert( "validation failed" );
+    return false;}
+        function reset(){
+           location.href("Create New Account.html");
+        }
+
+    }
+
+</script>
+
+                </div>
+            </div>
+        </div>
+    </section>
